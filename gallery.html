@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Of Gallery 01</title>
+    <style>
+           nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+
+
+
+
+        .box {
+            height: 100%;
+            width:25%;
+            transition: transform 0.3s ease;
+        }
+
+        .box.hovered {
+            transform: scale(1.1);
+        }
+
+        .box1 {
+            height: 100%;
+            width:25%;
+            transition: transform 0.3s ease;
+        }
+
+        .box1.hovered {
+            transform: scale(1.1);
+        }
+
+        
+        .box2 {
+            height: 100%;
+            width:25%;
+            transition: transform 0.3s ease;
+        }
+
+        .box2.hovered {
+            transform: scale(1.1);
+        }
+
+        
+        .box3 {
+            height: 100%;
+            width:25%;
+            transition: transform 0.3s ease;
+        }
+
+        .box3.hovered {
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+<body>
+    <div style="position: absolute; height:87% ;top: 10%; left:10%; gap: 2px; width:80%;">
+       
+        <nav>
+            <ul>
+                <li><a href="intro.html">Home</a></li>
+                <li><a href="index.html">image </a></li>
+                <li><a href="gallery.html">Gallery </a></li>
+            </ul>
+        </nav>
+        <br><br>
+    </div>
+    <div style="position: absolute; height:90% ;top: 25%; left:40%; gap: 2px; width:20%;">
+       
+       <div class="box" style="position: absolute; height: 100%; width:25%; background-image: url('photo/20.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;">
+     
+
+    </div>
+
+        <div class="box1" style="position: absolute; left: 25%;  height: 100%; width:25%; background-image: url('photo/2.jfif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;">
+     
+       
+    </div>
+
+       <div class="box2" style="position: absolute; left: 50%;  height: 100%; width:25%; background-image: url('photo/33.jfif');
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;">
+   
+    </div>
+
+        <div class="box3" style="position: absolute; left: 75%;  height: 100%; width:25%; background-image: url('photo/3.jfif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;">
+    
+    </div>
+    </div>
+
+
+    <script>
+        const box = document.querySelector('.box');
+
+        box.addEventListener('mouseenter', () => {
+            box.classList.add('hovered');
+        });
+
+        box.addEventListener('mouseleave', () => {
+            box.classList.remove('hovered');
+        });
+
+        const box1 = document.querySelector('.box1');
+
+        box1.addEventListener('mouseenter', () => {
+            box1.classList.add('hovered');
+        });
+
+        box1.addEventListener('mouseleave', () => {
+            box1.classList.remove('hovered');
+        });
+
+        const box2 = document.querySelector('.box2');
+
+        box2.addEventListener('mouseenter', () => {
+            box2.classList.add('hovered');
+        });
+
+        box2.addEventListener('mouseleave', () => {
+            box2.classList.remove('hovered');
+        });
+
+
+
+        const box3 = document.querySelector('.box3');
+
+        box3.addEventListener('mouseenter', () => {
+            box3.classList.add('hovered');
+        });
+
+        box3.addEventListener('mouseleave', () => {
+            box3.classList.remove('hovered');
+        });
+    </script>
+    
+</body>
+</html>
