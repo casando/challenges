@@ -4,7 +4,7 @@ This project is an interactive photo gallery with a lightbox feature. It also in
 
 ## Setup and Run
 
-1. Clone the repository:
+1. Clone the repository:https://github.com/casando/challenges.git
 2. Navigate to the project directory:
 3. Open `index.html` in your web browser to view the photo gallery.
 
